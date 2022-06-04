@@ -1,4 +1,8 @@
-/* Header */
+/* 
+=======================
+Header 
+=======================
+*/
 
 .header-container {
   display: flex;
@@ -55,28 +59,56 @@
   color: var(--primary-color);
 }
 
-@media screen and (min-width: 768px) {
-  .header-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo--toggle {
-    display: none;
-  }
+/* 
+=======================
+Hero Section 
+=======================
+*/
 
-  .navbar {
-    height: auto;
-  }
-
-  .navbar-list {
-    flex-direction: row;
-    padding: 0;
-  }
+.hero {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .navbar-list {
-    gap: 6.8rem;
-  }
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.hero-description h1 {
+  font-size: 3.6rem;
+}
+
+.hero-name {
+  display: block;
+  color: var(--primary-color);
+  font-size: 6.2rem;
+}
+
+.hero-description p {
+  font-size: 1.6rem;
+  color: var(--grey-color);
+}
+
+.hero-img {
+  display: none;
+}
+
+.social-icons {
+  margin-top: 1.2rem;
+}
+
+.social-icon {
+  color: var(--main-black);
+  font-size: 1.8rem;
+  padding-right: 1.2rem;
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  color: var(--primary-color);
 }

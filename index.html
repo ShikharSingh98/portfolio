@@ -17,9 +17,10 @@
     />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
   </head>
   <body>
-    <header>
+    <header id="home">
       <div class="container">
         <div class="header-container">
           <div class="logo-container">
@@ -28,7 +29,7 @@
           </div>
           <nav class="navbar" id="navbar">
             <ul class="navbar-list">
-              <li class="navbar-list-item"><a href="#" class="navbar-link">Home</a></li>
+              <li class="navbar-list-item"><a href="#home" class="navbar-link">Home</a></li>
               <li class="navbar-list-item"><a href="#skills" class="navbar-link">Skills</a></li>
               <li class="navbar-list-item"><a href="#projects" class="navbar-link">Projects</a></li>
               <li class="navbar-list-item"><a href="#blogs" class="navbar-link">Blogs</a></li>
@@ -37,6 +38,36 @@
         </div>
       </div>
     </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-description">
+            <h1>
+              Hi! I am
+              <span class="hero-name">Shikhar Singh</span>
+            </h1>
+            <p>Aspiring frontend developer</p>
+            <div class="social-icons">
+              <a href="https://in.linkedin.com/in/shikhar-singh-468ba21b8" class="move-up-1" target="_blank">
+                <i class="social-icon fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/ShikharSingh98" class="move-up-2" target="_blank">
+                <i class="social-icon fa-brands fa-github"></i>
+              </a>
+              <a href="https://hashnode.com/@Shikhar" class="move-up-3" target="_blank">
+                <i class="social-icon fa-brands fa-hashnode"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="hero-img-container">
+            <img class="hero-img" src="./img/hero-img.svg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./js/script.js"></script>
   </body>
 </html>

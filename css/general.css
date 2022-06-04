@@ -55,3 +55,11 @@ General Styles
   margin: 0 auto;
   padding: 0 2.4rem;
 }
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr auto;
+}
