@@ -1,0 +1,57 @@
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/* 
+=========================
+Global Styles
+=========================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #e9344a;
+  --primary-dark-color: #e71d36;
+  --main-black: #011627;
+  --main-white: #fff;
+  --grey-color: #4d5c68;
+  --dark-grey-color: #344552;
+  --light-grey-color: #99a2a9;
+  --transition: all 0.3s linear;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-black);
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 
+=========================
+General Styles
+=========================
+*/
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
