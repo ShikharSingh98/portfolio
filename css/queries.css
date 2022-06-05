@@ -27,6 +27,7 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    gap: 5rem 0;
   }
 }
 
@@ -34,17 +35,13 @@
   .skill-icon {
     font-size: 6.2rem;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .navbar-list {
-    gap: 6.8rem;
+  .projects {
+    gap: 2.4rem;
   }
-  .skill-icon {
-    font-size: 7.4rem;
-  }
+
   .project-img {
-    height: 30rem;
+    height: 28rem;
   }
 
   .project-name {
@@ -57,5 +54,22 @@
     line-height: 1.5;
     margin: 2.4rem 0;
     max-width: 50rem;
+  }
+
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar-list {
+    gap: 6.8rem;
+  }
+  .skill-icon {
+    font-size: 7.4rem;
+  }
+
+  .blogs {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

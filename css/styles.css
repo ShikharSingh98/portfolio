@@ -181,12 +181,58 @@ Projects Section
 
 .project-name {
   color: var(--primary-color);
-  font-size: 1.8rem;
+  font-size: 2.4rem;
 }
 
 .project-text {
-  font-size: 1.2rem;
-  line-height: 1.2;
+  font-size: 1.4rem;
+  line-height: 1.5;
   margin: 1.6rem 0;
   max-width: 50rem;
+  color: var(--grey-color);
+}
+
+/* 
+=======================
+Blogs Section 
+=======================
+*/
+
+.blogs {
+  padding: 6.4rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+
+.blog {
+  box-shadow: 0 1px 4px rgba(192, 192, 192, 0.522);
+  padding: 3.4rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.blog:hover {
+  box-shadow: 0 1px 4px rgba(192, 192, 192, 0.485);
+}
+
+.blog-title {
+  font-size: 2.4rem;
+}
+
+.blog-title::after {
+  content: '';
+  width: 5rem;
+  padding: 0.2rem;
+  background-color: #e71d36;
+  display: block;
+}
+
+.blog-text {
+  font-size: 1.4rem;
+  color: var(--grey-color);
+  max-width: 30rem;
 }
