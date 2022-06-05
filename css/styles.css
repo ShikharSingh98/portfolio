@@ -87,6 +87,7 @@ Hero Section
 
 .hero-description h1 {
   font-size: 3.6rem;
+  animation: moveFromRight 2s ease-in;
 }
 
 .hero-name {
@@ -98,6 +99,7 @@ Hero Section
 .hero-description p {
   font-size: 1.6rem;
   color: var(--grey-color);
+  animation: moveFromLeft 2s ease-in;
 }
 
 .hero-img {
@@ -106,9 +108,11 @@ Hero Section
 
 .social-icons {
   margin-top: 1.2rem;
+  display: flex;
 }
 
 .social-icon {
+  display: inline-block;
   color: var(--grey-color);
   font-size: 1.8rem;
   padding-right: 1.2rem;
@@ -240,4 +244,71 @@ Blogs Section
   font-size: 1.4rem;
   color: var(--grey-color);
   max-width: 30rem;
+}
+
+/* 
+===========================
+Animations
+===========================
+*/
+
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+
+  50% {
+    opacity: 0.75;
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+
+  50% {
+    opacity: 0.75;
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.move-up-1 {
+  animation: moveUp 1.5s linear forwards;
+}
+
+.move-up-2 {
+  animation: moveUp 1.5s linear 0.5s forwards;
+}
+
+.move-up-3 {
+  animation: moveUp 1.5s linear 1s forwards;
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
