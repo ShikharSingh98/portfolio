@@ -23,6 +23,11 @@
     flex-direction: row;
     padding: 0;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -37,5 +42,20 @@
   }
   .skill-icon {
     font-size: 7.4rem;
+  }
+  .project-img {
+    height: 30rem;
+  }
+
+  .project-name {
+    color: var(--primary-color);
+    font-size: 2.4rem;
+  }
+
+  .project-text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin: 2.4rem 0;
+    max-width: 50rem;
   }
 }
