@@ -9,10 +9,8 @@ allLinks.forEach((link) =>
     e.preventDefault();
     const href = link.getAttribute('href');
 
-    //scroll to top
-
-    if (href === '#home') window.scrollTo({ top: 0, behavior: 'smooth' });
-    if (href !== '#' && href.startsWith('#')) {
+    // if (href === '#home') window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (href.startsWith('#')) {
       const sectionElement = document.querySelector(href);
       sectionElement.scrollIntoView({ behavior: 'smooth' });
     }
