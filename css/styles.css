@@ -199,7 +199,6 @@ Blogs Section
 */
 
 .blogs {
-  padding: 6.4rem 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.4rem;
