@@ -202,12 +202,12 @@ Blogs Section
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.4rem;
+  margin-bottom: 2rem;
 }
 
 .blog {
   box-shadow: 0 1px 4px rgba(192, 192, 192, 0.522);
   padding: 3.4rem;
-  height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
