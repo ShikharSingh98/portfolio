@@ -29,27 +29,26 @@ Header
 }
 
 .navbar {
-  height: 0;
-  overflow: hidden;
-  transition: var(--transition);
-}
-
-.show-navbar {
-  height: 25rem;
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--main-black);
+  padding: 1.8rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px #01162758;
 }
 
 .navbar-list {
   list-style: none;
   display: flex;
-  flex-direction: column;
   gap: 3.2rem;
-  padding-top: 3.2rem;
 }
 
 .navbar-list-item a:link,
 .navbar-list-item a:visited {
   font-size: 1.6rem;
-  color: var(--main-black);
+  color: var(--main-white);
   transition: var(--transition);
   font-weight: 500;
 }
@@ -59,6 +58,13 @@ Header
   color: var(--primary-color);
 }
 
+.navbar-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
 /* 
 =======================
 Hero Section 
@@ -66,7 +72,7 @@ Hero Section
 */
 
 .hero {
-  min-height: 90vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
