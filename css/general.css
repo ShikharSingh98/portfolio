@@ -63,3 +63,18 @@ General Styles
 .grid--2-cols {
   grid-template-columns: 1fr auto;
 }
+
+/* Headings */
+
+.heading-primary {
+  font-size: 3.6rem;
+  margin-bottom: 5rem;
+}
+
+.heading-primary::after {
+  content: '';
+  width: 4.5rem;
+  padding: 0.3rem;
+  background-color: #e71d36;
+  display: block;
+}

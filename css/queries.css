@@ -1,7 +1,7 @@
 @media (min-width: 576px) {
   .hero-img {
     display: block;
-    width: 38rem;
+    width: 40rem;
   }
 }
 
@@ -25,8 +25,17 @@
   }
 }
 
+@media screen and (min-width: 992px) {
+  .skill-icon {
+    font-size: 6.2rem;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .navbar-list {
     gap: 6.8rem;
+  }
+  .skill-icon {
+    font-size: 7.4rem;
   }
 }
